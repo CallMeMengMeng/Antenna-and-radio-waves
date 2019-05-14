@@ -1,0 +1,24 @@
+%方向图乘积定理(平行二元阵)的演示
+clear all;clc;
+sita=meshgrid(0:pi/90:pi);
+fai=meshgrid(0:2*pi/90:2*pi)';
+l=0.25;%对称振子的长度
+d=1.25;%二元阵的间隔距离
+beta=0;%电流初始相位差
+m=1;%电流的振幅比
+r1=abs(cos(2*pi*1*cos(sita))-cos(2*pi*1))./abs(sin(sita)+eps);
+r2=sqrt(1+m*m+2*m*cos(beta+2*pi*d*sin(sita).*sin(fai)));
+r3=r1.*r2;
+r1max=max(max(r1));
+r2max=max(max(r2));
+r3max=max(max(r3));
+[x1,y1,z1]=sph2cart(fai,pi/2-sita,r1/r1max);
+[x2,y2,z2]=sph2cart(fai,pi/2-sita,r2/r2max);
+[x3,y3,z3]=sph2cart(fai,pi/2-sita,r3/r3max);
+figure(2);
+subplot(2,2,1);
+surf(x1,y1,z1);axis([-1 1 -1 1 -1 1]);shading interp;
+subplot(2,2,2);
+surf(x2,y2,z2);axis([-1 1 -1 1 -1 1]);shading interp;
+subplot(2,2,3);
+surf(x3,y3,z3);axis([-1 1 -1 1 -1 1]);shading interp;
