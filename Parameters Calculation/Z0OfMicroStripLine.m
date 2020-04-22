@@ -1,9 +1,9 @@
-disp('¸ù¾ÝÌî³ä½éÖÊ²ÎÊýEpsilonR¡¢Î¢´øÏß¿í¶Èw¡¢Î¢´øÏßºñ¶Èt¡¢½éÖÊ²ãºñ¶Èh£¬¼ÆËãÎ¢´øÏßÌØÐÔ×è¿¹Z0');
+disp('æ ¹æ®å¡«å……ä»‹è´¨å‚æ•°EpsilonRã€å¾®å¸¦çº¿å®½åº¦wã€å¾®å¸¦çº¿åŽšåº¦tã€ä»‹è´¨å±‚åŽšåº¦hï¼Œè®¡ç®—å¾®å¸¦çº¿ç‰¹æ€§é˜»æŠ—Z0');
 disp(' ');
-EpsilonR=input('1.ÇëÊäÈëÌî³ä½éÖÊEpsilonRµÄÊýÖµ£º');
-w=input('2.Î¢´øÏß¿í¶ÈwµÄÊýÖµ(mm)£º');
-t=input('3.Î¢´øÏßºñ¶ÈtµÄÊýÖµ(mm)£º');
-h=input('4.½éÖÊ²ãºñ¶ÈhµÄÊýÖµ(mm)£º');
+EpsilonR=input('1.è¯·è¾“å…¥å¡«å……ä»‹è´¨EpsilonRçš„æ•°å€¼ï¼š');
+w=input('2.å¾®å¸¦çº¿å®½åº¦wçš„æ•°å€¼(mm)ï¼š');
+t=input('3.å¾®å¸¦çº¿åŽšåº¦tçš„æ•°å€¼(mm)ï¼š');
+h=input('4.ä»‹è´¨å±‚åŽšåº¦hçš„æ•°å€¼(mm)ï¼š');
 
 A=w/h;
 if t==0
@@ -38,7 +38,7 @@ end
 Z0=Za0/(EpsilonE)^(0.5);
 
 disp('=====RESULT=====');
-fprintf('Ìî³äÒò×ÓqÎª£º%8.5f \n', q);
-fprintf('ÓÐÐ§½éµç³£ÊýEpsilonEÎª£º%8.5f \n', EpsilonE);
-fprintf('¿ÕÆøÎ¢´øÏßÌØÐÔ×è¿¹Za0Îª£º%8.5f (Ohms)\n', Za0);
-fprintf('Î¢´øÏßÌØÐÔ×è¿¹Z0Îª£º%8.5f (Ohms)\n', Z0);
+fprintf('å¡«å……å› å­qä¸ºï¼š%8.5f \n', q);
+fprintf('æœ‰æ•ˆä»‹ç”µå¸¸æ•°EpsilonEä¸ºï¼š%8.5f \n', EpsilonE);
+fprintf('ç©ºæ°”å¾®å¸¦çº¿ç‰¹æ€§é˜»æŠ—Za0ä¸ºï¼š%8.5f (Ohms)\n', Za0);
+fprintf('å¾®å¸¦çº¿ç‰¹æ€§é˜»æŠ—Z0ä¸ºï¼š%8.5f (Ohms)\n', Z0);
